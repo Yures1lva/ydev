@@ -33,7 +33,7 @@ export function Nav(){
                                     <li className="items" ><a>Contato</a></li>
                                     <li className="items" ><a>Contato</a></li>
                                     <li className="items" ><a>Contato</a></li>
-                                    <li className="items" ><a className="buttonNav">Orçamento</a></li>
+                                    <li className="items" ><button >Pedir Orçamento</button></li>
                                 </ul>  
                                 {/* ) */}
 

@@ -1,4 +1,5 @@
 import { Nav } from "./components/Navbar"
+import { GlobalStyle } from "./styles/global"
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
      <Nav/>
+     <GlobalStyle/>
     </>
   )
 }
