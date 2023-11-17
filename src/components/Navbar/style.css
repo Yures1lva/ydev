@@ -1,0 +1,153 @@
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    background: var(--background);
+    z-index: 1000;
+
+}
+
+.navigation nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.items{
+    margin:5px 8px ;
+    transition: all ease-in-out .2s;
+
+}
+
+.items:hover{
+    transform: scale(1.1);
+}
+
+.buttonNav{
+    margin: 5px 0;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all ease-in-out ;
+    border-radius: 6px;
+    border: 2px solid var(--primary);
+}
+
+
+  .buttonNav:hover{
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--background);
+    transform: scale(1.01);
+  
+  
+  }
+
+
+
+.controlNav{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.logo{
+    margin: 0;
+}
+
+.logo img {
+    width: 40px;
+    transition: all ease-in-out .2s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 860px){
+
+    .logo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 10px;
+    }
+
+
+    .logo img {
+        width: 50px;
+    }
+
+    .navigation nav {
+        flex-direction: column;
+        min-height: 30px;
+    }
+
+    .list{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .items:nth-child(1){
+        margin-top: 30px;
+    }
+
+
+    .items{
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+        padding: 10px 0;
+
+    }
+
+    .buttonNav{
+       padding: 10px 40%;
+    }
+
+    .controlNav{
+        display: block;
+        visibility: visible;
+        height: 30px;
+    }
+    
+}
+
+
+@media (max-width: 650px) {
+    .buttonNav{
+        padding: 10px 30%;
+     }
+ 
+    
+}
+
+@media (max-width: 320px) {
+    .buttonNav{
+        padding: 10px 20%;
+     }
+ 
+    
+}
