@@ -1,10 +1,11 @@
+import { Nav } from "./components/Navbar"
 
 
 function App() {
 
   return (
     <>
-     Hello
+     <Nav/>
     </>
   )
 }
